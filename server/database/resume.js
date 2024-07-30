@@ -65,7 +65,10 @@ const skillFieldSchema=new Schema({
     type:String
   }
 })
-
+const projectField=new Schema({
+  title:String,
+  workSummery:String
+})
 const userResumeDetails=new Schema({
   userEmail: {
     type: String,
@@ -105,6 +108,7 @@ github:{
 summary:{
   type:String
 },
+  projects:[projectField],
   experiences: [formFieldSchema],
   educations:[educationFieldSchema],
   skills:[skillFieldSchema]

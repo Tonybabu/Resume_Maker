@@ -8,7 +8,7 @@ function Home() {
   return (
     <div>
         <Header/>
-        <LangingPage client={user.fullName}/>
+        <LangingPage client={user?.fullName}/>
     </div>
   )
 }

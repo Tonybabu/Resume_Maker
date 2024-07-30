@@ -61,7 +61,7 @@ function onSave(e){
             </div>
             <div className='col-span-2'>
               <label className='text-sm'>Address</label>
-              <Input name="address" placeholder={resumeInfo?.address} required onChange={handleInputChange}/>
+              <Input name="address" placeholder={resumeInfo?.address}  onChange={handleInputChange}/>
             </div>
             <div>
               <label className='text-sm'>Phone Number</label>

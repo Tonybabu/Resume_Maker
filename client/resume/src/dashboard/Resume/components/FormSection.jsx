@@ -6,8 +6,9 @@ import Summery from './forms/Summery'
 import Experience from './forms/Experience'
 import Education from './forms/Education'
 import Skills from './forms/Skills'
-import html2canvas from 'html2canvas';
-import jsPDF from 'jspdf';
+//import html2canvas from 'html2canvas';
+//import jsPDF from 'jspdf';
+import Projects from './forms/Projects'
 
 function FormSection() {
     const [activeFormIndex,setActiveFormIndex]=useState(1)
@@ -22,8 +23,9 @@ function FormSection() {
         {activeFormIndex==1?<PersonalDetail enabledNext={(v)=>setEnabledNext(v)}/>:
           activeFormIndex==2?<Summery enabledNext={(v)=>setEnabledNext(v)} />:
           activeFormIndex==3?<Experience enabledNext={(v)=>setEnabledNext(v)}/>:
-          activeFormIndex==4?<Education enabledNext={(v)=>setEnabledNext(v)} />:
-          activeFormIndex==5?<Skills enabledNext={(v)=>setEnabledNext(v)} />:null
+          activeFormIndex==4?<Projects enabledNext={(v)=>setEnabledNext(v)}/>:
+          activeFormIndex==5?<Education enabledNext={(v)=>setEnabledNext(v)} />:
+          activeFormIndex==6?<Skills enabledNext={(v)=>setEnabledNext(v)} />:null
         }
 
         

@@ -9,6 +9,7 @@ import { Button } from '@/components/ui/button'
 import html2canvas from 'html2canvas'
 import jsPDF from 'jspdf'
 import { DownloadIcon } from 'lucide-react'
+import ProjectPreview from './preview/ProjectPreview'
 
 function ResumePreview() {
     const {resumeInfo,setResumeInfo}=useContext(ResumeInfoContext)
@@ -40,6 +41,7 @@ function ResumePreview() {
           <PersonalData resumeInfo={resumeInfo} />
           <Summary resumeInfo={resumeInfo} />
           <ProfessionalExp resumeInfo={resumeInfo} />
+          <ProjectPreview resumeInfo={resumeInfo}/>
           <Educational resumeInfo={resumeInfo} />
           <SkillPreview resumeInfo={resumeInfo} />
         </div>
